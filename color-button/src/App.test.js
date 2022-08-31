@@ -40,10 +40,10 @@ test('button turns blue after click', () => {
 
 test('checkbox disables on first click enables on second click', () => {
   render(<App/>)
-  const colorButton = screen.getByRole('button')
+  const colorButton = screen.getByRole('button', {name: 'Change to blue'})
+  const checkbox = screen.getByRole('checkbox', {name: 'Disable Button'})
   expect(colorButton).toBeEnabled()
 
-  const checkbox = screen.getByRole('checkbox')
   //check button starts enabled
   expect(checkbox).not.toBeChecked()
   expect(colorButton).toBeEnabled()

@@ -8,20 +8,24 @@ function App() {
   const newButtonColor = buttcolor === "red" ? "blue" : "red";
   return (
     <div className="App">
+      <div>
+
       <button
         style={{ backgroundColor: buttcolor }}
         onClick={() => setButtcolor(newButtonColor)}
         disabled={disabled}
-      >
+        >
         Change to {newButtonColor}
       </button>
       <input
         type="checkbox"
-        id="enable-button-ckeckbox"
+        id="disable-button-ckeckbox"
         defaultChecked={disabled}
         aria-checked={disabled}
         onChange={(e) => setDisabled(e.target.checked)}
-      ></input>
+        />
+      <label htmlFor="disable-button-checkbox">Disable Button</label>
+        </div>
 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
