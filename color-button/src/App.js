@@ -11,7 +11,7 @@ function App() {
       <div>
 
       <button
-        style={{ backgroundColor: buttcolor }}
+        style={{ backgroundColor: disabled ? 'gray' : buttcolor }}
         onClick={() => setButtcolor(newButtonColor)}
         disabled={disabled}
         >
@@ -24,7 +24,7 @@ function App() {
         aria-checked={disabled}
         onChange={(e) => setDisabled(e.target.checked)}
         />
-      <label htmlFor="disable-button-checkbox">Disable Button</label>
+      <label htmlFor="disable-button-ckeckbox">Disable Button</label>
         </div>
 
       <header className="App-header">
