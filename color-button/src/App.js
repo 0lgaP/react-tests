@@ -1,9 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react'
 
 function App() {
+  const [buttcolor, setButtcolor] = useState('red')
+  const newButtonColor = buttcolor === 'red' ? 'blue' : 'red'
   return (
     <div className="App">
+      <button style={{backgroundColor: buttcolor}} onClick={() => setButtcolor(newButtonColor)}>Change to {newButtonColor}</button>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

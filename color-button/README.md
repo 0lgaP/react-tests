@@ -50,4 +50,12 @@ BDD - QA, business partyners
 TDD - developers
 
 Accessible testing - test by accessibility tags, not ids to ensure screenreader compatibility
+
 [TestingLibrary Link](https://testing-library.com/docs/queries/about/#priority)
+
+[Accessibility Roles](https://www.w3.org/TR/wai-aria/#role_definitions)
+
+
+Roles are more useful. Some elements have built in roles like button or a-tag is 'link' etc
+
+[TestingLibrary Jest-Dom](https://github.com/testing-library/jest-dom)
